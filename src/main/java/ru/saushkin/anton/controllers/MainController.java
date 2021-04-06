@@ -15,7 +15,7 @@ public class MainController {
         this.mainService = mainService;
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String index() {
         return mainService.getHelloResponse();
     }

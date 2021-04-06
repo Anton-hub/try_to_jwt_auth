@@ -50,6 +50,7 @@ public class AuthInterceptor implements HandlerInterceptor {
             if (userLoginToken.required()) {
                 // Perform authentication
                 if (token == null) {
+                    //TODO get 401
                     throw new RuntimeException("No token, please log in again");
                 }
                 // Get the user id in the token

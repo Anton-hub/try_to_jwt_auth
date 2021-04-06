@@ -13,7 +13,6 @@ import ru.saushkin.anton.services.UserService;
 import ru.saushkin.anton.util.JWTUtil;
 
 @RestController
-@RequestMapping("api")
 public class TestController {
 
 
