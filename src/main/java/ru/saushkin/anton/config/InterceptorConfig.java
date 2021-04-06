@@ -8,11 +8,13 @@ import ru.saushkin.anton.interceptors.AuthInterceptor;
 
 @Configuration
 public class InterceptorConfig implements WebMvcConfigurer {
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(authenticationInterceptor())
                 .addPathPatterns("/**");
     }
+
     @Bean
     public AuthInterceptor authenticationInterceptor() {
         return new AuthInterceptor();

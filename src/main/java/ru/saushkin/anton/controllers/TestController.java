@@ -32,23 +32,18 @@ public class TestController {
 
         JSONObject jsonObject = new JSONObject();
         User userForBase = userService.findByUsername(user);
-        if(userForBase == null){
-
+        if (userForBase == null) {
             jsonObject.put("message","Login failed, user does not exist");
-            return jsonObject;
-        }else {
+        } else {
             if (!userForBase.getPassword().equals(user.getPassword())) {
-
                 jsonObject.put("message","Login failed, wrong password");
-                return jsonObject;
             } else {
-
                 String token = tokenService.getToken(userForBase);
                 jsonObject.put("token", token);
                 jsonObject.put("user", userForBase);
-                return jsonObject;
             }
         }
+        return jsonObject;
     }
 
     @UserLoginToken
