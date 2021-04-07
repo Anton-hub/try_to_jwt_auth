@@ -25,7 +25,6 @@ public class AuthInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object object)
             throws Exception {
 
-        // Take out the token from the http request header
         String token = httpServletRequest.getHeader("token");
 
         // If it is not mapped to the method, pass it directly
@@ -33,8 +32,8 @@ public class AuthInterceptor implements HandlerInterceptor {
             return true;
         }
 
-        HandlerMethod handlerMethod=(HandlerMethod)object;
-        Method method=handlerMethod.getMethod();
+        HandlerMethod handlerMethod = (HandlerMethod)object;
+        Method method = handlerMethod.getMethod();
 
         //Check if there is a passtoken comment, if yes, skip authentication
         if (method.isAnnotationPresent(PassToken.class)) {
@@ -50,19 +49,24 @@ public class AuthInterceptor implements HandlerInterceptor {
             if (userLoginToken.required()) {
                 // Perform authentication
                 if (token == null) {
-                    //TODO get 401
-                    throw new RuntimeException("No token, please log in again");
+//                    throw new RuntimeException("No token, please log in again");
+                    httpServletResponse.setStatus(401);
+                    return false;
                 }
                 // Get the user id in the token
                 String userId;
                 try {
                     userId = JWT.decode(token).getAudience().get(0);
                 } catch (JWTDecodeException j) {
-                    throw new RuntimeException("401");
+                    httpServletResponse.setStatus(401);
+                    return false;
                 }
+
                 User user = userService.findUserById(userId);
                 if (user == null) {
-                    throw new RuntimeException("User does not exist, please log in again");
+//                    throw new RuntimeException("User does not exist, please log in again");
+                    httpServletResponse.setStatus(401);
+                    return false;
                 }
 
                 // verify token
@@ -70,7 +74,9 @@ public class AuthInterceptor implements HandlerInterceptor {
                 try {
                     jwtVerifier.verify(token);
                 } catch (JWTVerificationException e) {
-                    throw new RuntimeException("401");
+//                    throw new RuntimeException("401");
+                    httpServletResponse.setStatus(401);
+                    return false;
                 }
                 return true;
             }

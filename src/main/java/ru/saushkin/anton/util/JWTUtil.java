@@ -16,7 +16,7 @@ public class JWTUtil {
          * The setting is valid for two minutes, adding the parameter withClaim, and setting the expiration time withExpiresAt.
          * Use personal password as key
          */
-        Date date = new Date(System.currentTimeMillis()+1000*60*2);
+        Date date = new Date(System.currentTimeMillis() + 1000*60*2);
         String token = JWT.create()
                 .withAudience(user.getId()).withClaim("city", "XM").withExpiresAt(date)
                 .sign(Algorithm.HMAC256(user.getPassword()));
