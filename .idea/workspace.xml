@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1c29640-2ba2-4b1f-8856-144bd996797b" name="Default Changelist" comment="Рефакторинг, поменял 500HTTP при проблемах с авторизацией на 401">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saushkin/anton/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saushkin/anton/controllers/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saushkin/anton/services/MainService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/try_to_jwt_auth.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="0f49c21712e9fcbe3603acc2c60802c722b42f28" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\apache-maven-3.8.1" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qn9YItMlpqjpbpKq8gS46Hrwds" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2959805" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.saushkin.anton.config" />
+      <recent name="ru.saushkin.anton.controllers" />
+      <recent name="ru.saushkin.anton.security" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.saushkin.anton.security.mappers" />
+      <recent name="ru.saushkin.anton" />
+      <recent name="ru.saushkin.anton.security.domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootHelloWorldApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="try_to_jwt_auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.saushkin.anton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.saushkin.anton.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootHelloWorldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="try_to_jwt_auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.saushkin.anton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.saushkin.anton.SpringBootHelloWorldApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringBootHelloWorldApplication" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Spring Boot.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1c29640-2ba2-4b1f-8856-144bd996797b" name="Default Changelist" comment="" />
+      <created>1617704536112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617704536112</updated>
+      <workItem from="1617704537276" duration="823000" />
+      <workItem from="1617705378550" duration="9235000" />
+      <workItem from="1617736875903" duration="3738000" />
+      <workItem from="1617784291032" duration="3987000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init commit">
+      <created>1617706251895</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617706251895</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update gitignore">
+      <created>1617706336267</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617706336267</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Удалил скомпилированные классы">
+      <created>1617706407077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617706407077</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Не рабочий пример с https://www.toptal.com/java/rest-security-with-jwt-spring-security-and-java">
+      <created>1617710544053</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617710544053</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Еще один пример, не запускается.">
+      <created>1617718238519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617718238519</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Еще один пример, не запускается.">
+      <created>1617720567074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617720567074</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Рефакторинг, исправление maven предупреждений (все еще не работает)">
+      <created>1617739753316</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617739753316</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Добавил parent секцию в pom, запустилось, не тестировал">
+      <created>1617740022064</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617740022064</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Протестировал, что не рабтает без токена, дает 500">
+      <created>1617740611456</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617740611456</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Рефакторинг, поменял 500HTTP при проблемах с авторизацией на 401">
+      <created>1617787502556</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617787502556</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit" />
+    <MESSAGE value="Update gitignore" />
+    <MESSAGE value="Удалил скомпилированные классы" />
+    <MESSAGE value="Не рабочий пример с https://www.toptal.com/java/rest-security-with-jwt-spring-security-and-java" />
+    <MESSAGE value="Еще один пример, не запускается." />
+    <MESSAGE value="Рефакторинг, исправление maven предупреждений (все еще не работает)" />
+    <MESSAGE value="Добавил parent секцию в pom, запустилось, не тестировал" />
+    <MESSAGE value="Протестировал, что не рабтает без токена, дает 500" />
+    <MESSAGE value="Рефакторинг, поменял 500HTTP при проблемах с авторизацией на 401" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рефакторинг, поменял 500HTTP при проблемах с авторизацией на 401" />
+  </component>
+</project>
